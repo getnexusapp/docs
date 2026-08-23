@@ -18,9 +18,3 @@ Typo fixes, clarity improvements, and missing steps are welcome — see
 [CONTRIBUTING.md](https://github.com/getnexusapp/.github/blob/main/CONTRIBUTING.md).
 Content here is licensed under
 [CC BY 4.0](https://github.com/getnexusapp/.github/blob/main/LICENSE.md).
-
-## Building locally
-
-_(Fill in once you pick a docs generator — e.g. Docusaurus, Nextra,
-VitePress. Until then this repo can just be organized folders of
-Markdown files, which render fine directly on GitHub.)_
