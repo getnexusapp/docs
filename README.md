@@ -1,6 +1,6 @@
 # Nexus Docs
 
-Public documentation for [Nexus](https://getnexus.app).
+Public documentation for [Nexus]().
 
 ## Structure
 
