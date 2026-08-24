@@ -14,7 +14,4 @@ Public documentation for [Nexus]().
 
 ## Contributing
 
-Typo fixes, clarity improvements, and missing steps are welcome — see
-[CONTRIBUTING.md](https://github.com/getnexusapp/.github/blob/main/CONTRIBUTING.md).
-Content here is licensed under
-[CC BY 4.0](https://github.com/getnexusapp/.github/blob/main/LICENSE.md).
+Typo fixes, clarity improvements, and missing steps are welcome — see [CONTRIBUTING.md](https://github.com/getnexusapp/.github/blob/main/CONTRIBUTING.md). Content and software in this repository are subject to the [Nexus Proprietary License](./LICENSE.md).
