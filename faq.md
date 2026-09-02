@@ -2,7 +2,7 @@
 
 ### Is Nexus free?
 
-See the [Nexus License](https://github.com/getnexusapp/Nexus/blob/main/LICENSE.md) and website for current pricing and licensing terms.
+Yes, it is.
 
 ### Is Nexus open source?
 
@@ -50,4 +50,4 @@ Windows, macOS, and Linux, as a native desktop application.
 
 ### How do I report a bug or request a feature?
 
-Use the [issue tracker](#) linked from the main repository, or the "Report an Issue" link on the [Nexus organization page](https://github.com/getnexusapp).
+Use the [issue tracker](https://github.com/getnexusapp/releases/issues) linked from the main repository, or the "Report an Issue" link on the [Nexus organization page](https://github.com/getnexusapp).
