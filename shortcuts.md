@@ -27,7 +27,7 @@ The Command Palette (`Ctrl/Cmd + K`) is the fastest way to move around Nexus —
 | `Ctrl / Cmd + I` | Italic |
 | `Ctrl / Cmd + U` | Underline |
 | `Ctrl / Cmd + Z` | Undo |
-| `Ctrl / Cmd + Y` (or `Shift + Ctrl/Cmd + Z`) | Redo |
+| `Ctrl / Cmd + Y` | Redo |
 
 Undo/redo groups by whole word, not by keystroke or by sentence — one step reverts one word at a time.
 
