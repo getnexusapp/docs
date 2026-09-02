@@ -8,11 +8,11 @@ Nexus is a desktop application that brings your notes, a real web browser, and a
 
 ## Contents
 
-- **[Getting Started](docs/getting-started.md)** — installation, first launch, and a guided tour
-- **[Features](docs/features.md)** — everything Nexus does, in depth
-- **[Keyboard Shortcuts](docs/shortcuts.md)** — the command palette and every shortcut
-- **[Data & Privacy](docs/data-and-privacy.md)** — what's stored where, and what ever leaves your device
-- **[FAQ](docs/faq.md)** — common questions
+- **[Getting Started](getting-started.md)** — installation, first launch, and a guided tour
+- **[Features](features.md)** — everything Nexus does, in depth
+- **[Keyboard Shortcuts](shortcuts.md)** — the command palette and every shortcut
+- **[Data & Privacy](data-and-privacy.md)** — what's stored where, and what ever leaves your device
+- **[FAQ](faq.md)** — common questions
 - **[Contributing to the Docs](CONTRIBUTING.md)** — how to suggest fixes or additions to these pages
 
 ---
