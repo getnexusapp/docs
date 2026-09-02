@@ -2,7 +2,7 @@
 
 ## Installing Nexus
 
-Nexus is a native desktop app for Windows, macOS, and Linux. Download the installer for your platform from the [releases page](#), run it, and launch Nexus like any other application. No account, sign-up, or internet connection is required to use the core app.
+Nexus is a native desktop app for Windows, macOS, and Linux. Download the installer for your platform from the [Releases Page](https://github.com/getnexusapp/releases/releases/tag/v5.0.0), run it, and launch Nexus like any other application. No account, sign-up, or internet connection is required to use the core app.
 
 ## First Launch
 
