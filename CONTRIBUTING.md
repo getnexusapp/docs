@@ -11,8 +11,8 @@ Nexus's application source code is closed and proprietary — this repository co
 
 ## What This Repo Is Not For
 
-- Bug reports about the Nexus application itself — use the main [issue tracker](#)
-- Feature requests for the app — use the main [issue tracker](#)
+- Bug reports about the Nexus application itself — use the main [issue tracker](https://github.com/getnexusapp/releases/issues)
+- Feature requests for the app
 - Source code, build instructions, or anything about the app's internal implementation — Nexus does not accept or host external code contributions, since the codebase itself is not public
 
 ## Making a Change
