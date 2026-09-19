@@ -30,12 +30,3 @@ The Command Palette (`Ctrl/Cmd + K`) is the fastest way to move around Nexus —
 | `Ctrl / Cmd + Y` | Redo |
 
 Undo/redo groups by whole word, not by keystroke or by sentence — one step reverts one word at a time.
-
-## Quick Capture
-
-| Shortcut | Action |
-|---|---|
-| `Esc` | Cancel and close |
-| `Ctrl / Cmd + Enter` | Save as a new note |
-
-The first line you type becomes the note's title; everything after the first line break becomes the body.
