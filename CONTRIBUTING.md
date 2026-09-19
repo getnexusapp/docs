@@ -5,7 +5,7 @@ Nexus's application source code is closed and proprietary — this repository co
 ## What You Can Contribute
 
 - Fixes for inaccurate, outdated, or unclear documentation
-- Clarifications based on real user confusion (if something in [Getting Started](docs/getting-started.md) or the [FAQ](docs/faq.md) didn't make sense to you, others likely hit the same thing)
+- Clarifications based on real user confusion (if something in [Getting Started](https://github.com/getnexusapp/docs/blob/main/getting-started.md) or the [FAQ](https://github.com/getnexusapp/docs/blob/main/faq.md) didn't make sense to you, others likely hit the same thing)
 - Typo and formatting fixes
 - New FAQ entries for questions that keep coming up in issues or support
 
