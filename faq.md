@@ -48,10 +48,6 @@ Yes. Settings → Data → Export Markdown Notes produces a zip of every note as
 
 You'll see a message that the limit has been reached; it clears gradually on a rolling basis as your older usage ages out, rather than resetting at a fixed time each day or month. You can keep using notes, the browser, and the knowledge graph in the meantime, since none of those depend on the Assistant.
 
-### Which platforms does Nexus support?
-
-Windows, macOS, and Linux, as a native desktop application.
-
 ### How do I report a bug or request a feature?
 
 Use the [issue tracker](https://github.com/getnexusapp/releases/issues) linked from the main repository, or the "Report an Issue" link on the [Nexus organization page](https://github.com/getnexusapp).
