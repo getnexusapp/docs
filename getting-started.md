@@ -2,7 +2,7 @@
 
 ## Installing Nexus
 
-Nexus is a native desktop app for Windows, macOS, and Linux. Download the installer for your platform from the [Releases Page](https://github.com/getnexusapp/releases/releases/tag/v5.0.0), run it, and launch Nexus like any other application. No account, sign-up, or internet connection is required to use the core app.
+Nexus is a native desktop app for Windows, macOS, and Linux. Download the installer for your platform from the [Releases Page](https://github.com/getnexusapp/releases/releases/tag/v5.4.0), run it, and launch Nexus like any other application. No account, sign-up, or internet connection is required to use notes, the browser, or the knowledge graph.
 
 ## First Launch
 
@@ -10,7 +10,7 @@ The first time you open Nexus, you'll land on the **Notes** tab with an empty we
 
 - Click **Write Your First Note** to create your first note (this also opens a short tutorial on `[[wiki links]]` and `#tags`)
 - Click **Surf the Web** to jump straight into the built-in browser
-- Click **Ask the Assistant** to open the AI chat (you'll need to add an API key first — see [Setting Up the Assistant](#setting-up-the-assistant) below)
+- Click **Ask the Assistant** to open the AI chat (you'll need to sign up for a free Nexus Cloud account first — see [Setting Up the Assistant](#setting-up-the-assistant) below)
 
 ## A Guided Tour
 
@@ -18,7 +18,6 @@ The first time you open Nexus, you'll land on the **Notes** tab with an empty we
 
 The narrow bar on the far left is always visible, regardless of which tab you're in. It has:
 
-- A **Quick Capture** button (the lightning bolt) for jotting a stray thought as a note from anywhere in the app, without leaving what you're doing
 - Tabs for **Notes**, **Browser**, **Assistant**, and **Graph**
 - **Settings** at the bottom
 
@@ -32,14 +31,16 @@ A real, tabbed web browser lives inside Nexus — not an embedded preview, but n
 
 ### Setting Up the Assistant
 
-The Assistant uses Google's Gemini API under a **bring-your-own-key** model — Nexus never ships or proxies a shared key.
+The Assistant is powered by **Nexus Cloud**, a service Nexus operates — it is not a "bring your own key" feature, and there's no third-party AI provider account for you to set up yourself.
 
-1. Open the **Assistant** tab. If no key is set, the settings panel opens automatically.
-2. Click **Open Google AI Studio** (opens inside Nexus's own browser tab) and sign in with any Google account — it's free to get started.
-3. Click **Create API key**, then copy it.
-4. Paste it into the **Gemini API key** field in Nexus and click **Save**.
+1. Open the **Assistant** tab. If you're not signed in, a sign-up/sign-in screen opens automatically.
+2. Enter an email address and a password (at least 8 characters) to create a free Nexus Cloud account, or sign in if you already have one.
+3. Once signed up or signed in, Nexus issues your device a Nexus Cloud API key automatically — there's nothing else to copy or paste.
+4. Start asking the Assistant questions. Your usage is subject to a rolling usage limit; you can check your remaining usage and manage your account from the Account panel in the Assistant tab.
 
-Your key is stored in your operating system's secure credential store (Keychain on macOS, Credential Manager on Windows, Secret Service on Linux) — never in a plain file, and never sent anywhere except directly to Google when you ask a question.
+Your Nexus Cloud API key is stored in your operating system's secure credential store (Keychain on macOS, Credential Manager on Windows, Secret Service on Linux). Your account's password is never stored in plain text — only a salted hash of it is kept, on Nexus's own server.
+
+Requests you send to the Assistant go from your device to Nexus's own cloud service first, which then forwards them to a third-party AI provider on Nexus's behalf; see [Data & Privacy](data-and-privacy.md) for exactly what that involves.
 
 ### The Graph
 
@@ -47,6 +48,6 @@ Once you have a handful of notes, open the **Graph** tab to see how they connect
 
 ## Next Steps
 
-- Read [Features](features.md) for a full breakdown of everything Nexus can do
-- Read [Data & Privacy](data-and-privacy.md) to understand exactly what's stored where
-- Check [Keyboard Shortcuts](shortcuts.md) — Nexus is built to be used mostly without touching the mouse
+- Read [Features](features.md) for a full breakdown of everything Nexus can do.
+- Read [Data & Privacy](data-and-privacy.md) to understand exactly what's stored where, and what a Nexus Cloud account involves.
+- Check [Keyboard Shortcuts](shortcuts.md) — Nexus is built to be used mostly without touching the mouse.
