@@ -28,7 +28,7 @@ Every note also shows a **Linked From** (backlinks) panel and a **Links to** pan
 
 ### Version History
 
-Nexus automatically snapshots a note roughly once a minute while you're actively editing it, but only when something actually changed since the last snapshot — so idle time or unchanged saves don't bloat history. Up to 250 versions are kept per note, oldest pruned first. Open **Version History** from any note's header to browse past versions and restore one; restoring first snapshots your current content too, so a restore is never a one-way trip.
+Nexus automatically snapshots a note roughly once a minute while you're actively editing it, but only when something actually changed since the last snapshot — so idle time or unchanged saves don't bloat history. Open **Version History** from any note's header to browse past versions and restore one; restoring first snapshots your current content too, so a restore is never a one-way trip.
 
 ### Trash
 
@@ -43,6 +43,8 @@ Press **Ctrl/Cmd + K** anywhere in the app to open the command palette — a fuz
 - **Markdown export** — every note is exported as a plain `.md` file (with a small frontmatter header for title/dates), organized into a folder structure matching your Nexus folders, and zipped into a single downloadable archive. Fully portable to any other Markdown-based tool.
 - **PDF export** — export a single note as a standalone, nicely formatted PDF, including headings, lists, code blocks, blockquotes, and colored tags — generated entirely on your device.
 
+Notes, folders, tags, links, version history, and export/backup are all local operations and require no account or internet connection.
+
 ---
 
 ## Browser
@@ -51,11 +53,13 @@ Nexus includes a real, native, multi-tab web browser — not an embedded preview
 
 - Up to **8 tabs** open at once, each with its own independent browsing session, history, and back/forward stack
 - A background tab keeps running (scroll position, video playback, unsaved form input all persist) when you switch away and back — it's not reloaded
-- **Bookmarks** bar for quick access to saved pages
+- **Bookmarks** for quick access to saved pages
 - A **downloads** indicator and history
 - A configurable **default homepage** (Settings → Browser)
 
 Links clicked anywhere inside Nexus — in a note, in an Assistant reply, in a page that tries to open a new window — open inside Nexus's own Browser tab, never in an external system browser.
+
+The browser itself requires no account; visiting a website communicates with that website's own servers as normal.
 
 ---
 
@@ -63,9 +67,17 @@ Links clicked anywhere inside Nexus — in a note, in an Assistant reply, in a p
 
 The Assistant is an AI chat panel that can ground its answers in your own notes and, optionally, whatever you currently have open in the Browser tab.
 
-### Bring Your Own Key
+### Nexus Cloud Account (Not Bring Your Own Key)
 
-Nexus has no bundled or shared AI key. You supply your own Gemini API key (see [Getting Started](getting-started.md#setting-up-the-assistant)), stored in your OS's secure credential store — never in a plain file on disk.
+The Assistant is **not** a "bring your own key" feature. It's powered by **Nexus Cloud**, a service Nexus itself operates:
+
+- You create a free Nexus Cloud account (an email address and password) or sign in to an existing one from inside the Assistant tab.
+- Nexus issues your device a Nexus Cloud API key on signup/login, which is stored in your OS's secure credential store.
+- When you ask a question, your device sends the request to Nexus's own cloud service, which forwards it to a third-party AI provider using Nexus's own provider credentials (not yours), and returns the reply.
+- Nexus Cloud usage is subject to a rolling usage limit (see [Data & Privacy](data-and-privacy.md#nexus-cloud-account-and-usage)); if you exceed it, requests are paused until it rolls forward, or you can wait for it to reset.
+- You can view your account, see remaining key regenerations, and sign out from the Account panel in the Assistant tab or in Settings.
+
+There is currently no way to supply your own third-party AI provider key instead.
 
 ### Conversations
 
@@ -73,7 +85,7 @@ Each chat lives in its own conversation, listed in a collapsible sidebar — ren
 
 ### Retrieval: How Nexus Finds What's Relevant
 
-Before sending a question to the AI, Nexus searches your notes locally to find what's actually relevant, then includes only those snippets in the request:
+Before sending a question to the Assistant, Nexus searches your notes locally to find what's actually relevant, then includes only those snippets in the request sent to Nexus Cloud:
 
 - **Semantic search** runs first, using a small sentence-embedding model that downloads once and then runs entirely on your device (no network call per question). It finds notes that match the *meaning* of your question, not just shared keywords.
 - **Keyword search** is the fallback if semantic search finds nothing or the local model isn't ready yet.
@@ -82,11 +94,11 @@ Which notes were used to answer a question are shown as clickable **Sources** un
 
 ### Page Awareness
 
-If you have pages open in the Browser tab, the Assistant can optionally read their text and use it as context — toggle this per-conversation with the "Aware of tabs" pill. Page content is always treated as untrusted reference material, never as instructions, even if a page's text tries to look like one.
+If you have pages open in the Browser tab, the Assistant can optionally read their text and use it as context — toggle this per-conversation with the "Aware of tabs" pill. Page content is always treated as untrusted reference material, never as instructions, even if a page's text tries to look like one. When enabled, this page text is included in the request sent to Nexus Cloud along with your question.
 
 ### Contradiction Watching
 
-When enabled, Nexus quietly compares the pages you have open against your notes in the background and flags likely factual conflicts — for example, noticing that an article you're reading states something that contradicts a note you wrote earlier. This runs as a two-stage check (a free, local similarity pass first, then a narrow AI call only for the closest-matching note) to avoid burning API calls on pages that have nothing to do with your notes.
+When enabled, Nexus quietly compares the pages you have open against your notes in the background and flags likely factual conflicts — for example, noticing that an article you're reading states something that contradicts a note you wrote earlier. This runs as a two-stage check: a free, local similarity pass first (entirely on-device), then a narrow check using a small local model only for the closest-matching note — this second stage also runs on-device and does not call Nexus Cloud.
 
 ### Saving Answers
 
@@ -114,8 +126,8 @@ Four built-in themes — **Darkness** (near-black), **Dusk** (deep navy), **Dayl
 
 ## Data Management
 
-- **Backup** — creates a complete, consistent snapshot of your database via SQLite's own `VACUUM INTO`, saved wherever you choose.
+- **Backup** — creates a complete, consistent snapshot of your local database via SQLite's own `VACUUM INTO`, saved wherever you choose.
 - **Restore** — restores from a previously saved backup file. Nexus verifies the file is actually a valid SQLite database before touching anything, and keeps a safety copy of your prior database in case a restore turns out to be a mistake. Takes effect after restarting Nexus.
 - **Clear All Data** — a guarded, double-confirmation action that permanently erases every note, folder, tag, link, chat message, and version — for starting fresh.
 
-All of the above operate purely on the local database file; none of it touches a remote server, because Nexus doesn't have one.
+These operations act on your local database file only. They do not affect your Nexus Cloud account, which is managed separately (see [Data & Privacy](data-and-privacy.md)).
