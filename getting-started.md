@@ -1,11 +1,5 @@
 # Getting Started
 
-## Installing Nexus
-
-Nexus is a native desktop app for Windows, macOS, and Linux. Download the installer for your platform from the [Releases Page](https://github.com/getnexusapp/releases/releases/tag/v5.4.0), run it, and launch Nexus like any other application. No account, sign-up, or internet connection is required to use notes, the browser, or the knowledge graph.
-
-## First Launch
-
 The first time you open Nexus, you'll land on the **Notes** tab with an empty welcome screen. From here you can:
 
 - Click **Write Your First Note** to create your first note (this also opens a short tutorial on `[[wiki links]]` and `#tags`)
@@ -38,7 +32,7 @@ The Assistant is powered by **Nexus Cloud**, a service Nexus operates — it is 
 3. Once signed up or signed in, Nexus issues your device a Nexus Cloud API key automatically — there's nothing else to copy or paste.
 4. Start asking the Assistant questions. Your usage is subject to a rolling usage limit; you can check your remaining usage and manage your account from the Account panel in the Assistant tab.
 
-Your Nexus Cloud API key is stored in your operating system's secure credential store (Keychain on macOS, Credential Manager on Windows, Secret Service on Linux). Your account's password is never stored in plain text — only a salted hash of it is kept, on Nexus's own server.
+Your Nexus Cloud API key is stored in your operating system's secure credential store (Keychain on macOS, Credential Manager on Windows, Secret Service on Linux). Your account's password is never stored in plain text — only a salted hash of it is kept on Nexus's own server.
 
 Requests you send to the Assistant go from your device to Nexus's own cloud service first, which then forwards them to a third-party AI provider on Nexus's behalf; see [Data & Privacy](data-and-privacy.md) for exactly what that involves.
 
