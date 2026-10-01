@@ -1,133 +1,144 @@
-# Features
+## Features
 
-## Notes
+### Notes That Think As You Do
 
-### Writing
+- A rich-text (WYSIWYG) editor — bold looks bold, headings look like headings, and code blocks are syntax-highlighted.
+- A full formatting toolbar with undo/redo, bold, italic, underline, strikethrough, headings, block quotes, bulleted lists, numbered lists, task lists, images, tables, inline code, code blocks, links, and **UPPERCASE / lowercase / Title Case** transformations.
+- Insert **PNG, JPEG, GIF, and WebP** images up to 8 MB each. Images are stored inside your local database, so they travel with your backups and exports.
+- Type `[[` anywhere in a note to instantly search your notes and create links. Keep typing to narrow the results with fuzzy matching — `[[rcp` can find **Recipe Ideas**.
+- Insert a note link with **Enter**, **Tab**, or a click. You can also choose **New link** to create a link to a note you have not written yet.
+- Type `[[Note Title]]` to create an explicit note connection, or simply mention another note by name and let Nexus detect the relationship.
+- Note links appear as clickable pills directly inside the editor.
+- `#tags` automatically become colored pills as you type. No separate tag manager or setup required.
+- Optional **auto-capitalization** while you write.
+- Optional **word-count bubble** showing words, characters, and characters excluding spaces.
+- Word-level undo and redo, so you can step backward or forward through individual changes.
+- **Version history** automatically preserves earlier versions of your notes. Preview an older version and restore it whenever you need to.
+- Organize your workspace with **folders**.
+- **Pin** important notes so they stay easy to find and stand out in the knowledge graph.
+- A **command palette** (`Cmd/Ctrl+K`) for quickly jumping to notes, finding actions, and navigating your workspace without reaching for the mouse.
+- A real **Trash** — deleted notes stay recoverable until you restore them, permanently delete them, or empty the Trash.
+- Fast local search across your workspace using both **meaning and keywords**, so you can find ideas even when you do not remember the exact words you wrote.
+- Local search indexes and embeddings are generated on your device to support semantic search and related-note features.
+- Your notes and workspace are **local-first**. Your notes are stored on your device rather than automatically synchronized to a Nexus cloud database.
 
-Notes are written and previewed in a single live-formatting editor — no separate "edit" and "preview" modes. Bold looks bold, headings look big, and links are clickable as you type, while the underlying content is stored as plain Markdown.
+### A Browser That Belongs to Your Workspace
 
-The formatting toolbar above the editor gives you: undo/redo, bold, italic, underline, strikethrough, headings (H1–H3), blockquote, bulleted and numbered lists, inline code, fenced code blocks with syntax highlighting, link insertion, and case transforms (UPPERCASE / lowercase / Title Case) for selected text.
+- Up to **8 tabs**, each displaying a real native web page — not an iframe — so websites that block embedding can still load.
+- Switch away from a tab and come back to it exactly where you left it, including scroll position, video state, and form input where supported.
+- **Back, forward, and reload** controls.
+- An address bar that doubles as a search bar, using **Brave Search by default**, with the option to set your own homepage.
+- A **bookmark system** with a bookmark library for saving and organizing pages.
+- A **tab overview** for seeing and switching between your open pages.
+- Links that request new windows open as new Nexus tabs instead.
+- Only **HTTP and HTTPS** pages can be opened.
+- Links clicked inside your notes or AI Assistant responses open directly in the Nexus Browser instead of your system browser.
+- Browser pages can provide context to the AI Assistant when you allow it through the applicable browser settings.
+- Nexus can read open-page text **locally on your device** for browser features such as conflict detection.
+- The browser keeps its own cookies, site data, bookmarks, and downloaded-file information locally.
 
-Pasting code from an editor like VS Code is detected automatically (via clipboard metadata, syntax-highlighted HTML, or plain-text heuristics) and converted into a proper fenced, syntax-highlighted code block instead of landing as unformatted text.
+### An Assistant That Actually Knows Your World
 
-**Auto-capitalize** fixes the first letter of a sentence, line, or a standalone lowercase "i" as you type. It can be turned off in Settings.
+- **Nexus Cloud AI** is the optional AI Assistant built into your workspace.
+- A free **Nexus Cloud account** is required to use the Assistant.
+- Ask questions about your own knowledge base and receive answers based primarily on the most relevant excerpts from your notes.
+- Nexus identifies the **notes used as sources** for an answer.
+- Your notes are searched using both **semantic meaning and keyword matching**.
+- Ask questions using the context of pages currently open in the Nexus Browser.
+- Nexus can fetch relevant page content in the background when browser context is used.
+- Search the **live web** for current information when your question requires it.
+- AI web-search requests can retrieve relevant information from current web pages.
+- While you browse, Nexus can compare open browser pages with your notes **on-device**.
+- Nexus can tell you when an open page relates to one of your notes.
+- Nexus can flag possible **factual conflicts** between information in your notes and information found on an open page.
+- Browser conflict detection can be switched off.
+- Keep **as many separate AI conversations as you want**, with conversations stored locally on your device.
+- Rename conversations whenever you want.
+- Delete individual conversations whenever you want.
+- Turn an AI response into a **new note with one click**.
+- AI Assistant conversation history remains part of your local workspace rather than being maintained as a permanent server-side conversation database.
+- The Assistant uses a rolling **5-hour usage window** rather than unlimited usage.
+- Check your current usage from the app.
+- Regenerate your Nexus Cloud API key when needed, subject to the applicable regeneration limit.
+- Reset your Nexus Cloud password through email.
+- Permanently delete your Nexus Cloud account from the app.
+- Your Nexus Cloud account is separate from your local workspace — you do not need an account to use Nexus's core local-first features.
 
-**Word count** can be toggled on per session from the editor header — a small floating bubble shows word count, character count, and character count excluding spaces.
+### A Map of Everything You Know
 
-### Folders and Tags
+- A living, interactive **knowledge graph** showing how your notes connect.
+- Drag and zoom freely around your graph.
+- **Solid lines** represent explicit `[[links]]` between notes.
+- **Dashed lines** represent relationships Nexus detected automatically.
+- Nodes are sized according to how connected they are.
+- Nodes are colored according to their folder.
+- **Pinned notes receive a gold outline** so important information stands out.
+- Click any node to open its note.
+- The graph updates as your notes and relationships change.
+- Connections can be discovered from the content of your workspace rather than requiring you to manually create every relationship.
 
-Notes can be organized into **folders** from the sidebar. **Tags** are lighter-weight and fully automatic: type `#project` anywhere in a note's body and it becomes a real tag the moment the note saves — no separate tag manager, no manually assigning tags. Delete the text and the tag is gone from that note. The sidebar lists every tag currently in use, with a live count, and clicking one filters your notes to just that tag.
+### Search That Understands Meaning
 
-### Wiki Links and Automatic Mentions
+- Search your entire workspace without relying solely on exact words.
+- Combine **keyword matching and semantic search** to find relevant notes.
+- On-device embeddings help Nexus understand relationships between ideas.
+- Search indexes remain local to your device.
+- Related-note features can surface connections that are not represented by explicit `[[links]]`.
+- Search works alongside folders, tags, links, and the knowledge graph rather than replacing them.
 
-Type `[[Note Title]]` anywhere in a note and Nexus turns it into a clickable link to that note as soon as it's saved — even if the target note doesn't exist yet (it'll render as a "missing" link you can click to create it).
+### AI That Can Run on Your Device
 
-You don't have to use brackets at all: if you simply mention another note's exact title in ordinary prose, Nexus notices and treats it as a softer, automatic connection — visible as a dashed edge in the Graph tab, separate from the solid edges explicit `[[links]]` create.
+- Some Nexus features use **on-device AI models** downloaded from public model-hosting infrastructure.
+- These models can support local features such as semantic search, related-note discovery, page analysis, and conflict detection.
+- Processing performed by these models can happen locally on your device.
+- Downloading an on-device model is separate from sending an AI Assistant request through Nexus Cloud.
+- Your local workspace does not need a Nexus Cloud account for features that operate entirely on your device.
 
-Every note also shows a **Linked From** (backlinks) panel and a **Links to** panel for its explicit connections, plus a **Related (semantic)** panel showing notes that are similar in *meaning* even without any shared link or wording — powered by the same on-device search used by the Assistant.
+### It Looks However You Want
 
-### Version History
+- Four built-in themes: **Darkness**, **Dusk**, **Daylight**, and **Dawn**.
+- A custom title bar designed to fit the Nexus interface.
+- **Self-hosted fonts**, so the interface remains consistent even when you are offline.
+- The interface is designed to remain usable without a cloud connection for local-first features.
 
-Nexus automatically snapshots a note roughly once a minute while you're actively editing it, but only when something actually changed since the last snapshot — so idle time or unchanged saves don't bloat history. Open **Version History** from any note's header to browse past versions and restore one; restoring first snapshots your current content too, so a restore is never a one-way trip.
+### Your Workspace Stays Yours
 
-### Trash
+- **Markdown export:** export your notes as `.md` files inside a `.zip`, preserving your folder structure.
+- Markdown exports include a small metadata header for each note.
+- Images used by notes are included as attachments in the export.
+- **PDF export:** export any individual note as a PDF, generated entirely on your device.
+- **Full workspace backup:** create a complete `.db` backup containing your workspace, preferences, bookmarks, and other locally stored Nexus data.
+- Backups are created **only when you choose to create them**.
+- **Restore:** select a backup and Nexus verifies that it is a valid SQLite database before replacing your current workspace.
+- Restored data takes effect after restarting the application.
+- Your local database gives you a portable backup of your workspace rather than requiring continuous cloud synchronization.
+- Export your work whenever you want and keep your own independent copies.
 
-Deleting a note is a soft delete — it moves to **Trash** and stays there, fully intact (including its links, tags, and version history), until you restore it or empty the trash yourself. A brief undo toast also appears immediately after deleting, for the common case of catching a mistake right away.
+### Built for Local-First Privacy
 
-### Command Palette
+- Your core notes workspace does not require a cloud account.
+- Notes, folders, tags, links, images, version history, Trash, search indexes, embeddings, bookmarks, browser data, and locally stored AI conversations remain on your device during ordinary local operation.
+- Nexus does **not** automatically synchronize your notes and workspace to a cloud database.
+- The optional AI Assistant is different: requests are processed through **Nexus Cloud** and applicable third-party AI and search providers.
+- Your Nexus Cloud API key is stored using your operating system's secure credential storage, such as **Windows Credential Manager** or the **macOS Keychain**.
+- Account information required for Nexus Cloud is kept separately from your local workspace.
+- You can delete your Nexus Cloud account without deleting the local notes and workspace stored on your device.
+- Core local functionality remains available without a Nexus Cloud account.
 
-Press **Ctrl/Cmd + K** anywhere in the app to open the command palette — a fuzzy-search launcher for jumping to any note by title, creating a new note or folder, or switching tabs, all from the keyboard.
+### One Workspace, Not a Collection of Separate Apps
 
-### Export
+- Write your notes.
+- Browse the web.
+- Save bookmarks.
+- Connect ideas with `[[links]]`.
+- Discover relationships automatically.
+- Search your knowledge semantically.
+- Compare web pages with what you already know.
+- Ask an AI Assistant questions about your own workspace.
+- Turn useful answers into notes.
+- Visualize your knowledge as a graph.
+- Export everything to Markdown or PDF.
+- Back up the entire workspace to a SQLite database.
+- Restore it when you need to.
 
-- **Markdown export** — every note is exported as a plain `.md` file (with a small frontmatter header for title/dates), organized into a folder structure matching your Nexus folders, and zipped into a single downloadable archive. Fully portable to any other Markdown-based tool.
-- **PDF export** — export a single note as a standalone, nicely formatted PDF, including headings, lists, code blocks, blockquotes, and colored tags — generated entirely on your device.
-
-Notes, folders, tags, links, version history, and export/backup are all local operations and require no account or internet connection.
-
----
-
-## Browser
-
-Nexus includes a real, native, multi-tab web browser — not an embedded preview pane. Because it uses native child webviews rather than an iframe, it can open sites that block iframe embedding outright (most banks, search engines, and social platforms).
-
-- Up to **8 tabs** open at once, each with its own independent browsing session, history, and back/forward stack
-- A background tab keeps running (scroll position, video playback, unsaved form input all persist) when you switch away and back — it's not reloaded
-- **Bookmarks** for quick access to saved pages
-- A **downloads** indicator and history
-- A configurable **default homepage** (Settings → Browser)
-
-Links clicked anywhere inside Nexus — in a note, in an Assistant reply, in a page that tries to open a new window — open inside Nexus's own Browser tab, never in an external system browser.
-
-The browser itself requires no account; visiting a website communicates with that website's own servers as normal.
-
----
-
-## Assistant
-
-The Assistant is an AI chat panel that can ground its answers in your own notes and, optionally, whatever you currently have open in the Browser tab.
-
-### Nexus Cloud Account (Not Bring Your Own Key)
-
-The Assistant is **not** a "bring your own key" feature. It's powered by **Nexus Cloud**, a service Nexus itself operates:
-
-- You create a free Nexus Cloud account (an email address and password) or sign in to an existing one from inside the Assistant tab.
-- Nexus issues your device a Nexus Cloud API key on signup/login, which is stored in your OS's secure credential store.
-- When you ask a question, your device sends the request to Nexus's own cloud service, which forwards it to a third-party AI provider using Nexus's own provider credentials (not yours), and returns the reply.
-- Nexus Cloud usage is subject to a rolling usage limit (see [Data & Privacy](data-and-privacy.md#nexus-cloud-account-and-usage)); if you exceed it, requests are paused until it rolls forward, or you can wait for it to reset.
-- You can view your account, see remaining key regenerations, and sign out from the Account panel in the Assistant tab or in Settings.
-
-There is currently no way to supply your own third-party AI provider key instead.
-
-### Conversations
-
-Each chat lives in its own conversation, listed in a collapsible sidebar — rename, delete, or start a new one at any time. Conversations are saved locally and persist across restarts.
-
-### Retrieval: How Nexus Finds What's Relevant
-
-Before sending a question to the Assistant, Nexus searches your notes locally to find what's actually relevant, then includes only those snippets in the request sent to Nexus Cloud:
-
-- **Semantic search** runs first, using a small sentence-embedding model that downloads once and then runs entirely on your device (no network call per question). It finds notes that match the *meaning* of your question, not just shared keywords.
-- **Keyword search** is the fallback if semantic search finds nothing or the local model isn't ready yet.
-
-Which notes were used to answer a question are shown as clickable **Sources** underneath the reply.
-
-### Page Awareness
-
-If you have pages open in the Browser tab, the Assistant can optionally read their text and use it as context — toggle this per-conversation with the "Aware of tabs" pill. Page content is always treated as untrusted reference material, never as instructions, even if a page's text tries to look like one. When enabled, this page text is included in the request sent to Nexus Cloud along with your question.
-
-### Contradiction Watching
-
-When enabled, Nexus quietly compares the pages you have open against your notes in the background and flags likely factual conflicts — for example, noticing that an article you're reading states something that contradicts a note you wrote earlier. This runs as a two-stage check: a free, local similarity pass first (entirely on-device), then a narrow check using a small local model only for the closest-matching note — this second stage also runs on-device and does not call Nexus Cloud.
-
-### Saving Answers
-
-Any Assistant reply can be copied to your clipboard or saved directly as a new note with one click.
-
----
-
-## Knowledge Graph
-
-The Graph tab renders your entire note collection as an interactive, force-directed node graph:
-
-- Drag any node to reposition it; scroll to zoom; drag the background to pan
-- Solid edges are explicit `[[wiki links]]`; dashed edges are automatic title mentions
-- Nodes are colored by folder, with a legend in the corner
-- Larger nodes indicate more connections
-- Click any node to jump straight to that note
-
----
-
-## Appearance
-
-Four built-in themes — **Darkness** (near-black), **Dusk** (deep navy), **Daylight** (a proper light mode), and **Dawn** (warm charcoal with an amber accent) — switchable anytime from Settings, applied instantly across the whole app.
-
----
-
-## Data Management
-
-- **Backup** — creates a complete, consistent snapshot of your local database via SQLite's own `VACUUM INTO`, saved wherever you choose.
-- **Restore** — restores from a previously saved backup file. Nexus verifies the file is actually a valid SQLite database before touching anything, and keeps a safety copy of your prior database in case a restore turns out to be a mistake. Takes effect after restarting Nexus.
-- **Clear All Data** — a guarded, double-confirmation action that permanently erases every note, folder, tag, link, chat message, and version — for starting fresh.
-
-These operations act on your local database file only. They do not affect your Nexus Cloud account, which is managed separately (see [Data & Privacy](data-and-privacy.md)).
+**Nexus brings your notes, browser, knowledge graph, local intelligence, and optional cloud AI into one workspace — while keeping your core knowledge on your device.**
