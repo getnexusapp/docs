@@ -21,7 +21,7 @@ Your notes live in the left sidebar, optionally organized into folders and filte
 
 ### Browser
 
-A real, tabbed web browser lives inside Nexus — not an embedded preview, but native browsing with back/forward, bookmarks, and downloads. See [Browser](features.md#browser).
+A real, tabbed web browser lives inside Nexus — not an embedded preview, but native browsing with back/forward, bookmarks, and downloads. See [Browser](features.md#a-browser-that-belongs-to-your-workspace).
 
 ### Setting Up the Assistant
 
