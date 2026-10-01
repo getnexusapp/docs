@@ -17,7 +17,7 @@ The narrow bar on the far left is always visible, regardless of which tab you're
 
 ### Notes
 
-Your notes live in the left sidebar, optionally organized into folders and filtered by tag. Click any note to open it in the editor. Typing `[[Another Note's Title]]` creates a real link between notes; typing `#topic` anywhere creates a tag. See [Notes](features.md#notes) for the full picture.
+Your notes live in the left sidebar, optionally organized into folders and filtered by tag. Click any note to open it in the editor. Typing `[[Another Note's Title]]` creates a real link between notes; typing `#topic` anywhere creates a tag. See [Notes](features.md#notes-that-think-as-you-do) for the full picture.
 
 ### Browser
 
