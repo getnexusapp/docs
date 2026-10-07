@@ -2,7 +2,7 @@
 
 Nexus is an application that brings your notes, a real web browser, and an AI assistant into one workspace. Your notes and browsing live locally on your device; the AI Assistant is powered by a Nexus-operated cloud service that requires a free Nexus Cloud account. This repository is the public documentation for Nexus — it does not contain the application's source code, which is proprietary. See the [Nexus Proprietary License](https://github.com/getnexusapp/.github/blob/main/LICENSE.md) for terms of use.
 
-**Get Nexus:** [Website](https://letnexusout.vercel.app/) · [Download](https://github.com/getnexusapp/releases/releases/tag/v5.4.0) · [Report an Issue](https://github.com/getnexusapp/releases/issues)
+**Get Nexus:** [Website](https://nexusworkspace.net) · [Download](https://github.com/getnexusapp/releases/releases) · [Report an Issue](https://github.com/getnexusapp/releases/issues)
 
 ---
 
