@@ -1,8 +1,8 @@
 # Nexus Documentation
 
-Nexus is an application that brings your notes, a real web browser, and an AI assistant into one workspace. Your notes and browsing live locally on your device; the AI Assistant is powered by a Nexus-operated cloud service that requires a free Nexus Cloud account. This repository is the public documentation for Nexus — it does not contain the application's source code, which is proprietary. See the [Nexus Proprietary License](https://github.com/getnexusapp/.github/blob/main/LICENSE.md) for terms of use.
+Nexus is an application that brings your notes, a real web browser, and an AI assistant into one workspace. Your notes and browsing live locally on your device; the AI Assistant is powered by a Nexus-operated cloud service that requires a free Nexus Cloud account. This repository is the public documentation for Nexus — it does not contain the application's source code, which is proprietary. See the [Nexus Software License](https://nexusworkspace.net/software-license) for terms of use.
 
-**Get Nexus:** [Website](https://nexusworkspace.net) · [Download](https://github.com/getnexusapp/releases/releases) · [Report an Issue](https://github.com/getnexusapp/releases/issues)
+**Get Nexus:** [Website](https://nexusworkspace.net) · [Download](https://nexusworkspace.net/#download) · [Report an Issue](https://github.com/getnexusapp/releases/issues)
 
 ---
 
@@ -36,4 +36,4 @@ At a glance:
 
 ## License
 
-Nexus is proprietary software. This documentation is provided to help users and prospective users understand and use the application; it is not a grant of rights to the application's source code. See [Nexus End User License Agreement](https://github.com/getnexusapp/.github/blob/main/EULA.md) in the main repository for full terms.
+Nexus is proprietary software. This documentation is provided to help users and prospective users understand and use the application; it is not a grant of rights to the application's source code. See [Nexus Software License](https://nexusworkspace.net/software-license) in the main repository for full terms.
