@@ -14,7 +14,7 @@ No, for notes, the browser (aside from actually loading web pages), the knowledg
 
 ### Do I need to create an account?
 
-Not for notes, the browser, or the knowledge graph — those have no account system at all. You **do** need to create a free Nexus Cloud account (email and password) to use the AI Assistant.
+Not for notes, the browser, or the knowledge graph — those have no account system at all. You **do** need to create a free Nexus Cloud account to use the AI Assistant.
 
 ### Where is my data stored?
 
